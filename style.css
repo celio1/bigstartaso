@@ -1,0 +1,26 @@
+.header{
+	height: 300px; 
+	width: 100%;
+	background: url("./business-ideas.jpg");
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo img{
+	height: 100px;
+	width: 100px;
+	margin-left: 100px;
+	float: left;
+}
+
+nav{
+	margin-top: 40px;
+	margin-right: 50px;
+	float: right;
+}
+nav a{
+	margin-left: 25px;
+}
