@@ -23,4 +23,51 @@ nav{
 }
 nav a{
 	margin-left: 25px;
+	text-decoration: none;
+	color: red;
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+}
+
+.description{
+
+}
+.sobre{
+	margin-top: 400px;
+	float: left;
+	margin-left: 100px;
+	
+	border-style: solid;
+	border-color:#285E90;
+	
+	height: 400px;
+	position: absolute;
+	
+	width: 40%;
+	border-radius: 2px;
+	padding-right: 10px; 
+	font-family: "droid sans";
+	font-size: 10;
+	-webkit-column-count: 1;
+	column-gap: 40px;
+
+
+}
+
+.logodir{
+	margin-top: 430px;
+	float: right;
+	margin-right: 170px;
+}
+
+.logodir img{
+	height: 300px;
+	width: 300px;
+}
+
+.line1{
+	margin-top: 700px;
 }
