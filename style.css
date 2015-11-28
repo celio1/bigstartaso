@@ -1,7 +1,7 @@
 .header{
-	height: 300px; 
+	height: 450px; 
 	width: 100%;
-	background: url("./business-ideas.jpg");
+	background: url("./bg.png");
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -24,32 +24,35 @@ nav{
 nav a{
 	margin-left: 25px;
 	text-decoration: none;
-	color: red;
+	color: #2C2E3A;
 	font-family: Arial, sans-serif;
 	font-size: medium;
 	font-weight: bold;
 	letter-spacing: 1px;
+	border: solid 0px #2C2E3A
+	transition: border 0.3s;
 
 }
+
 
 .description{
-
 }
 .sobre{
-	margin-top: 400px;
+	margin-top: 500px;
 	float: left;
 	margin-left: 100px;
 	
-	border-style: solid;
+	border-right: solid;
 	border-color:#285E90;
 	
 	height: 400px;
 	position: absolute;
+	text-align: left;
+	font-size: 18px;
 	
 	width: 40%;
-	border-radius: 2px;
 	padding-right: 10px; 
-	font-family: "droid sans";
+	font-family: Arial, sans-serif;
 	font-size: 10;
 	-webkit-column-count: 1;
 	column-gap: 40px;
