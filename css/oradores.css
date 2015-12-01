@@ -1,0 +1,91 @@
+.header{
+
+	height: 450px; 
+	width: 100%;
+	background: url("../img/bg.png");
+	position: absolute;
+	background-size: cover;
+	top:0;
+	left:0;
+	right: 0;
+}
+
+.logo img{
+	height: 70px;
+	width: 70px;
+	margin-left: 100px;
+	margin-top: 13px;
+	float: left;
+}
+
+nav{
+	margin-top: 40px;
+	margin-right: 50px;
+	float: right;
+}
+nav a#top{
+	text-transform: uppercase;
+	padding: 10px 10px 10px 10px;
+	border:2px solid #F2F2F2;
+	margin-left: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+	text-decoration: none;
+	color: #2C2E3A;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: border 0.4s;
+	-webkit-transition: border 0.4s;
+}
+nav a#top:hover{
+	border:2px solid #2C2E3A;
+
+}
+#atual{
+	text-transform: uppercase;
+	padding: 10px 10px 10px 10px;
+	margin-left: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+	text-decoration: none;
+	color: #2C2E3A;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border:2px solid #2C2E3A;
+}
+.title_oradores{
+	position:absolute;
+	top:150px;
+	left:100px;
+	right: 0;
+	padding:0;
+	margin-left:auto;
+    margin-right:auto;
+	font-family: Arial, sans-serif;
+	color: #2C2E3A;
+	
+}
+
+.oradores{
+	margin-top: 600px;
+}
+
+.row{
+	margin-left: 250px;
+	margin-bottom: 10px;
+}
+.col{
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+	margin-left: 10px;
+	border: 2px solid yellow; 
+
+}
+
