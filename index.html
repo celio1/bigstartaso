@@ -5,6 +5,20 @@
 	<meta charset="UTF-8">
 	<title>Big Start ASO</title>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.211491, -8.4292014),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -18,20 +32,17 @@
 		<div class="nav_bar"> 
 			<nav>
 				<a id="atual" href="/html/">Evento</a> 
-				<a href="/css/">Registo</a> 
-				<a href="/js/">Programa</a>
-				<a href="/jquery/">Oradores</a>
-				<a href="/jquery/">Parceiros</a>
-				<a href="/jquery/">Contacto</a>
+				<a id="top" href="/css/">Registo</a> 
+				<a id="top" href="/js/">Programa</a>
+				<a id="top" href="/jquery/">Oradores</a>
+				<a id="top" href="/jquery/">Parceiros</a>
+				<a id="top" href="/jquery/">Contacto</a>
 
 			</nav>
 		</div>
 
 
 </div>
-
-<div class="description">
-
 	<div class="sobre">
 	<h1><p id="tit"> O que é o Big Start? </p></h1>
 	Um evento direccionado para as tuas ideias!	
@@ -43,18 +54,27 @@
 	Habilita-te a ser promovido pela Startup Lisboa ou pela Startup Braga!
 	<p id="quote">Big Start<br/>
 	"Start Small, Think Big"</p>
-
 	</div>
 
 	<div class="logodir"> <img src="./logo.png"></div>
 
+<div class="line"></div>
+<div class="mapa" id="map">
 </div>
-
-
-
-<div class="mapa">
+<div class="local">
+	<h3>Localização</h3>
+	<p id="location"> Coimbra, Portugal</p>
 </div>
-
+<div class="line1"></div>
+<div class="contact">
+	<h3>Contacta-nos</h3>
+</div>
+<div class="logos"> 
+	<ul>
+	<li><a id="bott" href="/html/"><img src="./fb.png"></a></li>
+	<li><a id="bott" href="/css/"><img src="./li.png"></a></li>
+	<li><a id="bott" href="/js/"><img src="./msg.png"></a></li>
+	</ul>
 </body>
 
 </html>
