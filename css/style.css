@@ -37,8 +37,8 @@ nav a#top{
 	font-size: 14px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	transition: border 0.4s;
-	-webkit-transition: border 0.4s;
+	transition: border 0.4s ease;
+	-webkit-transition: border 0.4s ease;
 }
 nav a#top:hover{
 	border:2px solid #2C2E3A;

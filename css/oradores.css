@@ -73,7 +73,8 @@ nav a#top:hover{
 }
 
 .oradores{
-	margin-top: 600px;
+	position:absolute;
+	top: 600px;
 }
 
 .row{
