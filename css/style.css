@@ -1,3 +1,30 @@
+  .affix {
+     top: 0;
+      width: 100%;
+      background-color: #2C2E3A;
+      opacity:0.8;
+      -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .affix nav a#top {
+	color:#F2F2F2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border:2px solid #2C2E3A;
+  }
+ .affix nav a#top:hover{
+ 	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	border:2px solid #F2F2F2;
+
+}
+.affix #atual{
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	color: #F2F2F2;
+	border:2px solid #F2F2F2;
+}
 .header{
 
 	height: 450px; 
@@ -11,19 +38,28 @@
 }
 
 .logo img{
+	z-index: 1;
+	position:sticky;
 	height: 70px;
 	width: 70px;
 	margin-left: 100px;
 	margin-top: 13px;
 	float: left;
 }
-
+.nav_bar{
+	z-index: 1;
+	height:100px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
 nav{
+	z-index: 1;
 	margin-top: 40px;
 	margin-right: 50px;
 	float: right;
 }
 nav a#top{
+	z-index: 1;
 	text-transform: uppercase;
 	padding: 10px 10px 10px 10px;
 	border:2px solid #F2F2F2;
@@ -41,10 +77,12 @@ nav a#top{
 	-webkit-transition: border 0.4s ease;
 }
 nav a#top:hover{
+	z-index: 1;
 	border:2px solid #2C2E3A;
 
 }
 #atual{
+	z-index: 1;
 	text-transform: uppercase;
 	padding: 10px 10px 10px 10px;
 	margin-left: 10px;
@@ -60,6 +98,7 @@ nav a#top:hover{
 	border:2px solid #2C2E3A;
 }
 .titulo{
+	z-index: 0;
 	position:absolute;
 	top:150px;
 	left:80px;
@@ -69,14 +108,17 @@ nav a#top:hover{
 	text-align:center;
 }
 #quote{
+	z-index: 0;
 	color:#ff5759;
 	font-size: 18px;
 }
 #tit{
+	z-index: 0;
 	color: #2C2E3A;
 	font-size: 28px;
 }
 .sobre{
+	z-index: 0;
 	font-family: 'PT Sans', sans-serif;
 	top: 500px;
 	color: #929292;
@@ -92,6 +134,7 @@ nav a#top:hover{
 }
 
 .logodir{
+	z-index: 0;
 	top: 550px;
 	width:30%;
 	right:100px;
@@ -113,6 +156,7 @@ nav a#top:hover{
     width:80%;
 }
 #map {
+	z-index: 0;
    	width: 500px;
     height: 400px;
 	top: 1100px;
@@ -174,11 +218,5 @@ li{
 	padding:60px 12px 8px 12px;
 	display:inline;
 	list-style-type: none;
-	border:2px solid white;
 	border-radius: 50%;
-	transition: border 0.7s;
-	-webkit-transition: border 0.7s;
-}
-li:hover{
-	border:2px solid #2C2E3A;
 }

@@ -1,3 +1,36 @@
+  .affix {
+     top: 0;
+      width: 100%;
+      background-color: #2C2E3A;
+      opacity:0.8;
+      -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .affix nav a#top {
+    color:#F2F2F2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border:2px solid #2C2E3A;
+  }
+ .affix nav a#top:hover{
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border:2px solid #F2F2F2;
+
+}
+.affix #atual{
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #F2F2F2;
+    border:2px solid #F2F2F2;
+}
+.nav_bar{
+    z-index: 1;
+    height:100px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
 .header{
 
 	height: 450px; 
