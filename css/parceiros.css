@@ -115,7 +115,7 @@ nav a#top:hover{
 	position:absolute;
 }
 
-.btn {
+.btn1 {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
@@ -128,7 +128,7 @@ nav a#top:hover{
   text-decoration: none;
 }
 
-.btn:hover {
+.btn1:hover {
   background: #2aa2e8;
   text-decoration: none;
   font-family: Arial;
