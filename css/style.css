@@ -3,15 +3,14 @@
       width: 100%;
       background-color: #2C2E3A;
       opacity:0.8;
-      -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
-
   .affix nav a#top {
 	color:#F2F2F2;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    border:2px solid #2C2E3A;
+    border: 2px solid rgba(255, 255, 255, 0);
   }
  .affix nav a#top:hover{
  	-webkit-transition: all .5s ease-in-out;
@@ -49,8 +48,8 @@
 .nav_bar{
 	z-index: 1;
 	height:100px;
-	transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
 }
 nav{
 	z-index: 1;
@@ -62,7 +61,7 @@ nav a#top{
 	z-index: 1;
 	text-transform: uppercase;
 	padding: 10px 10px 10px 10px;
-	border:2px solid #F2F2F2;
+	border: 2px solid rgba(255, 255, 255, 0);
 	margin-left: 10px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -73,8 +72,8 @@ nav a#top{
 	font-size: 14px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	transition: border 0.4s ease;
-	-webkit-transition: border 0.4s ease;
+	transition: border 0.5s ease;
+	-webkit-transition: border 0.5s ease;
 }
 nav a#top:hover{
 	z-index: 1;
