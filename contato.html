@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/contato.css">
+	<meta charset="UTF-8">
+	<title>Big Start ASO</title>
+	<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.211491, -8.4292014),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+
+	<div class="header">
+				<div class="nav_bar" data-spy="affix" data-offset-top="5">
+				<div class="logo">
+					<img src="./img/logo.png">
+				</div>
+				<nav>
+					<a id="top" href="./index.html">Evento</a> 
+					<a id="top" href="./registo.html">Registo</a> 
+					<a id="top" href="./programa.html">Programa</a>
+					<a id="top" href="./oradores.html">Oradores</a>
+					<a id="top" href="./parceiros.html">Parceiros</a>
+					<a id="atual" href="./contato.html">Contacto</a>
+
+		</nav>
+		</div>
+	</div>
+	<div class="titulo">
+		<p><h1>Contata-nos</h1></p>
+	</div>
+	<div class="quote">
+		Se tens alguma dúvida não hesistes em nos contatar.
+	</div>
+	<div class="line"></div>
+	<div class="sep"> 
+	<h3>MORADA</h3><p></p><p></p>Universidade de Coimbra Av. Dias da Silva, 165 3004-512 COIMBRA PORTUGAL
+	</div>
+	<div class="mapa" id="map">
+	</div>
+	<div class="line1"></div>
+	<div class="logos">
+	<ul>
+	<li><a id="bott" href="https://www.facebook.com/academicastartup/"><img src="./img/fb.png"></a></li>
+	<li><a id="bott" href="https://www.linkedin.com/company/acad%C3%A9mica-startup"><img src="./img/li.png"></a></li>
+	<li><a id="bott" href="mailto:bigstart@academicastartup.pt"><img src="./img/msg.png"></a></li>
+	</ul>
+</div>
+</body>
+</html>
