@@ -252,6 +252,12 @@ ul{
 	text-align: center;
 	font-family: Arial, sans-serif;
 }
+input{
+		display: none;
+	}
+.oi{
+	display:none;
+}
 @media (max-width: 780px){
 	.smartlogo{
 		display:block;
@@ -261,9 +267,7 @@ ul{
 	.logo img{
 		left:75px;
 	}
-	input{
-		display: none;
-	}
+
 	span{
 		right:0;
 		left:0;
