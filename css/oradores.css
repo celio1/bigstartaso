@@ -46,11 +46,12 @@
 }
 
 .logo img{
+	z-index: 1;
+	position:absolute;
 	height: 70px;
 	width: 70px;
-	margin-left: 100px;
-	margin-top: 13px;
-	float: left;
+	left: 100px;
+	top: 13px;
 }
 
 nav{
@@ -96,20 +97,22 @@ nav a#top:hover{
 }
 .title_oradores{
 	position:absolute;
-	top:150px;
-	left:100px;
+	top:480px;
 	right: 0;
-	padding:0;
+	left:0;
 	margin-left:auto;
     margin-right:auto;
 	font-family: Arial, sans-serif;
 	color: #2C2E3A;
+	text-align: center;
 	
 }
 
 .oradores{
 	position:absolute;
 	top: 600px;
+	z-index: -1;
+	text-align: center;
 
 }
 
@@ -124,5 +127,251 @@ nav a#top:hover{
 	margin-left: 10px;
 	border: 2px solid yellow; 
 
+}
+input{
+		display: none;
+	}
+.oi{
+	display:none*;
+}
+#phone{
+	display: none;
+}
+.smartlogo{
+	display: none;
+		position: absolute;
+		top:25px;
+		right: 75px;
+		width:50px;
+		height:50px;
+}
+.cr{
+	position: absolute;
+	top:2000px;
+	color: #2C2E3A;
+	margin-bottom: 10px;
+	font-size: 12px;
+	right:0;
+	left:0;
+	margin-left:auto;
+    margin-right:auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+@media (max-width: 1000px) and (min-width: 781px){
+	nav a#top{
+	z-index: 1;
+	text-transform: uppercase;
+	padding: 5px;
+	border: 2px solid rgba(255, 255, 255, 0);
+	margin-left: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+	text-decoration: none;
+	color: #2C2E3A;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: border 0.5s ease;
+	-webkit-transition: border 0.5s ease;
+}
+nav a#top:hover{
+	z-index: 1;
+	border:2px solid #2C2E3A;
+
+}
+#atual{
+	z-index: 1;
+	text-transform: uppercase;
+	padding: 5px;
+	margin-left: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+	text-decoration: none;
+	color: #2C2E3A;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border:2px solid #2C2E3A;
+}
+	.logo img{
+		left:80px;
+	}
+}
+@media (max-width: 780px){
+	.smartlogo{
+		display:block;
+		cursor: pointer;
+		align-items:center;
+	}
+	.logo img{
+		left:75px;
+	}
+	
+	span{
+		right:0;
+		left:0;
+		margin-left:auto;
+    	margin-right:auto;
+		opacity:1;
+		z-index: 3;
+		height:2px;
+		background-color: #2C2E3A;
+		display:block;
+		border-radius: 20%;
+		position:relative;
+		width:100%;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+
+	}
+	span#meio{
+		height:2px;
+		top:22px;
+	}
+	span#meio1{
+		height:2px;
+		top:22px;
+		margin-top: -2px;
+	}
+	span#baixo{
+		top:44px;
+
+	}
+	#toggle-nav:not(checked) ~ .oi{
+		display:none;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+	}
+	#toggle-nav:checked ~ .oi{
+		display:block;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+	}
+	
+	.meiojq{
+		transform-origin:center;
+		transform:rotate(-45deg);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+	}	
+	.meio1jq{
+		transform-origin:center;
+		transform:rotate(45deg);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+	}
+	.affix span{
+		background-color: #f2f2f2;
+	}
+  .logodir{
+	display: none;
+}
+.logodir img{
+	display:none;
+}
+.oi{
+	z-index:5000;
+	position:fixed;
+	color:red;
+	text-align: center;
+	background-color: #2C2E3A;
+	opacity:0.8;
+	top:100px;
+	width:100%;
+	height:100%;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	text-align: center;
+}
+.affix .oi{
+	opacity:1;
+}
+.header{
+	background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+#top{
+	display:none;
+}
+#atual{
+	display:none;
+}
+#phone{
+	display:block;
+	top: 200px;
+	position:fixed;
+	z-index: 2;
+	padding:20px;
+	right:0;
+	left:0;
+	margin-left:auto;
+    margin-right:auto;
+	width:30%;
+	height:60%;
+	text-align: center;
+	text-decoration: none;
+}
+#phone li{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height:30px;
+	text-decoration: none;
+	list-style: none;
+
+}
+ul a#top1{
+	z-index: 2;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding:5px;
+	letter-spacing: 1px;
+	transition: border 0.5s ease;
+	-webkit-transition: border 0.5s ease;
+	text-align: center;
+	border: 2px solid rgba(255, 255, 255, 0);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+}
+ul a#atual1{
+	padding:5px;
+	border: 2px solid #f2f2f2;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+	min-height: 40px;
+	z-index: 2;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: border 0.5s ease;
+	-webkit-transition: border 0.5s ease;
+	text-align: center;
+}
+.title_oradores{
+		right:0;
+		left:0;
+		margin-left:auto;
+    	margin-right:auto;
+}
+.cr{
+	top:2000px;
+}
 }
 
